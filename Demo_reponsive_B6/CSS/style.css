@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.nav_bar {
+  height: 52px;
+  background-color: black; }
+  .nav_bar a {
+    color: white;
+    font-weight: bold; }
+
+.container .img_slider {
+  margin: 5px 0 5px 0; }
+  .container .img_slider img {
+    width: 100%; }
+
+.container .img_gallery img {
+  width: 100%;
+  margin: 15px 0 15px 0; }
+
+.footer {
+  background-color: black;
+  color: white; }

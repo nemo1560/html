@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    .container_fuild{
+        width: 100%;
+        position: relative;
+        .menu{
+            width: 20%;
+            height: 100%;
+            background-color: black;
+            position: fixed;
+        }
+        .content{
+            width: 80%;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+    }
+
+}

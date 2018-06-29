@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+/*.container: div width:1140px*/
+/*.frame_255: la div width: 255px*/
+/*.frame_s la div width: 350px*/
+/*.frame_l width 100% == container*/
+/*.frame_m width 50% == container */
+*{
+	padding:0;
+	margin:0;	
+}
+.container{
+	width:1140px;
+	margin: 0 auto;	
+}
+body{
+	font-family: merri;
+}
+@font-face{
+	font-family:italino;
+	src:url(../fonts/Italianno-Regular-OTF.otf);
+}
+@font-face{
+	font-family:merri;
+	src:url(../fonts/MerriweatherSans-Regular.otf);	
+}
+.clear{
+	clear:both;	
+}
+.header{
+	width: 100%;
+	min-height:500px;
+	background-image:url(../images/bg_banner.png);
+	background-size:cover; /* tu dong thu gon hinh nen */
+}
+.bg_nav{
+	width:100%;
+	min-height: 100px;
+	background-color:rgba(0,0,0,0.6);	
+}
+.logo{
+	float:left;
+	width:255px;
+	margin:0 15px;	
+}
+.nav{
+	float:left;
+	width: 825px;
+	height:100px;
+	margin:0 15px;		
+}
+.nav ul{
+	list-style:none;
+	float: right; /*move nav_bar va ben phai*/	
+}
+.nav ul li{
+	float:left;
+	margin:15px 15px;
+	line-height:100px;
+	overflow: hidden;
+}
+.nav ul li a{
+	text-decoration:none;
+	color:#FFF;
+	font-family:merri;
+	position: relative;
+}
+.nav ul li a:before{ /* tao animation border khi hover vao a, yeu cau su dung position cha con*/
+	position: absolute;
+	content:"";
+	background-color: orangered;
+	width: 100%;
+  	height: 2px;
+  	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	transform:translateX(-100%);
+	transition:all .5s ease;	
+}
+.nav ul li a:hover:before{ 
+	visibility: visible;
+	transform:translateX(0%);
+}
+.nav ul li a:hover{
+	color:#F90;	
+}
+.slider{
+	width: 50%;
+	min-height:300px;
+	border: 2px solid #FFF;
+	margin: 50px auto;
+}
+.frame_l{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+.frame_m{
+	width: 50%;
+	min-height: 200px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.frame_s{
+	width: 350px;
+	min-height: 50px;
+	float:left;
+	margin: 15px 15px;
+	position: relative;
+}
+.frame_255{
+	width: 255px;
+	min-height: 100px;
+	margin: 0 15px;
+	float: left;
+	
+}
+.wellcome, .about, .feedback, .reservation, .gallery, .sharing, .about, .contact{
+	width:100%;
+	min-height: 500px;
+	padding: 0 15px;
+}
+.reservation{
+	background-image: url(../images/bg_booking.png);
+	background-size: cover;
+}
+.sharing{
+	background-image: url(../images/bg-sharing.png);
+	background-size: cover;
+}
+.border{
+	margin-bottom: 20px;
+}
+
+/* h1 mau den*/
+.frame_s h1, .frame_l h1, .frame_m h1{ 
+	font-family:italino;
+	font-size: 100px;
+	font-weight:100;
+	text-align:center;
+	margin-bottom: -20px;
+		
+}
+.frame_s p ,.frame_255 p,.frame_m p, .frame_l .sharing p{
+	text-align: center;
+	color: gray;
+	font-size: 14px;
+	line-height: 24px;
+}
+/* nut cam nho*/
+.frame_l .frame_s button{
+	color: white;
+	background-color: orangered;
+	border: none;
+	width: 120px;
+	height: 40px;
+	position: absolute;
+	left: 30%;
+	margin-top: 40px;
+	cursor: pointer;
+	transition: all .5s ease;
+	
+}
+.frame_l .frame_s button:hover, .frame_l button:hover {
+	box-shadow: 5px 5px 20px orangered;
+}
+/* nut cam lon*/
+.frame_l button{
+	color: white;
+	background-color: orangered;
+	border: none;
+	width: 150px;
+	height: 40px;
+	position: absolute;
+	left: 45%;
+	margin-top: 120px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+/*tao border tron*/
+.frame_255 .services_img{
+	width: 125px;
+	height: 125px;
+	border: 3px solid orangered;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	box-sizing:border-box;
+	transition: all .3s ease;
+}
+.frame_255 .services_img img{
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	transition: all 2s ease;
+}
+.frame_255 .services_img:hover img{
+	transform: scale(1.2);
+	
+}
+.frame_255 .services_img:hover{
+	box-shadow: 5px 10px 30px orangered;
+	
+}
+
+.frame_255 h4, .frame_m h4{
+	color: orangered;
+	padding: 20px 0;
+}
+.frame_m h3{
+	margin: 25px 0 60px 0;
+	font-size: 36px;
+	color: orangered;
+}
+.frame_255 .chefs_img{
+	min-height: 330px;
+	position: relative;
+	overflow: hidden;	
+}
+.frame_255 .chefs_img .chefs_intro1{
+	width: 100%;
+	min-height: 50%;
+	background-color: rgba(0, 0, 0, .6);
+	position: absolute;
+	top:-50%;
+	left:0%;
+}
+.frame_255 .chefs_img .chefs_intro2{
+	width: 100%;
+	min-height: 50%;
+	background-color: rgba(0, 0, 0, .6);
+	position: absolute;
+	left:0%;
+	top:100%;
+}
+.frame_255 .chefs_img img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.frame_255 .chefs_img:hover .chefs_intro1{
+	transform:translateY(100%);
+	transition-duration: 1s;
+}
+.frame_255 .chefs_img:hover .chefs_intro2{
+	transform:translateY(-100%);
+	transition-duration: 1s;
+}
+
+.frame_m .icon_fb{
+	max-width: 125px;
+	max-height: 125px;
+	margin: 30px auto;	
+}
+/*tao border tron o hinh fb*/
+.frame_m .icon_fb img{
+	border-radius: 50%;
+	box-shadow: -3px -2px 35px black;
+}
+/* h1 chu cam*/
+.frame_l .reservation h1, .frame_l .sharing h1 {
+	line-height: 60px;
+	padding:50px;
+	color: orangered;
+}
+.frame_l .reservation .frame_s h3, .frame_l .footer .frame_s h3{
+	font-size: 18px;
+	color: white;
+	text-align: left;
+}
+.frame_l .reservation .frame_s input[type=text]{
+	width: 90%;
+	height: 30px;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0);
+}
+.frame_m .gallery_img{
+	margin: 30px 15px;
+	position: relative;
+	
+}
+.frame_l .sharing h3{
+	font-size: 35px;
+	color: white;
+}
+.frame_m .frame_255,.frame_m .frame_255 h4, .frame_m .frame_255 p {
+	text-align: left;
+}
+.frame_m p{
+	padding: 0 10px;
+}
+.frame_m .black_1{
+	width: 80%;
+	height: 40px;
+	margin: 15px 0;
+	
+	position: relative;
+}
+.footer{
+	min-height: 300px;
+	background-color: black;
+}
+.footer .frame_s img{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+.frame_l .footer .frame_s h3{
+	padding: 150px 0 0 10px;
+}
+.frame_l .contact .frame_m .black_1 .form_input {
+	width: 80%;
+	height: 38px;
+	border: none;
+	position: absolute;
+	left: 20%;
+	z-index: 1;
+}
+.frame_l .contact .frame_m .black_1 .form_label{
+	position: absolute;
+	left: 0;
+	width: 102%;
+	height: 40px;
+	line-height: 40px;
+	background-color: black;
+	color: white;
+	z-index: 2;
+	transition: all 1s ease; /* thuoc tinh transition bo trong css chua hover*/
+}
+.frame_l .contact .frame_m .black_1:hover .form_label{
+	width: 15%;
+	background-color: orangered;
+}
+
+	

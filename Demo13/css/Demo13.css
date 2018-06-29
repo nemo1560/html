@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;	
+}
+
+.container{
+	width: 500px;
+	height: 200px;
+	margin: 50px auto;
+	background-color:#000;		
+}
+.container input[type=text],input[type=password]{
+	width:496px;
+	height: 30px;
+	margin-top: 20px;	
+}
+.container input[type=submit]{
+	width: 150px;
+	height: 30px;
+	margin: 50px 150px;
+	
+}
+

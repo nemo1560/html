@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.title {
+  padding: 50px 20px; }
+
+.header {
+  background-image: url(../images/bg_header.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .nav .navbar-left a:hover {
+    background-color: transparent; }
+  .header .nav .navbar-brand {
+    margin-left: 150px; }
+  .header .nav .navbar-right input {
+    opacity: .6;
+    border-radius: 40px; }
+  .header .head h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 200px;
+    color: white; }
+  .header .head button {
+    padding: 5px 20px;
+    background-color: #54D154;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 10px 50px 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 200px;
+    margin-top: 50px; }
+
+.section_1 .intro ul > li img {
+  margin: 50px 10px; }
+
+.section_1 .intro ul > li h1 {
+  padding: 20px 20px; }
+
+.section_1 .intro ul > li button {
+  padding: 5px 20px;
+  background-color: #54D154;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin: 20px 10px 50px 10px; }
+
+.section2 {
+  background-color: #54D154;
+  text-align: center; }
+  .section2 .btn-choice {
+    border: 1px solid #54D154;
+    margin-bottom: 50px; }
+    .section2 .btn-choice .btn-secondary {
+      border: 1px solid #54D154;
+      border-radius: 20px; }
+  .section2 .active {
+    background-color: #54D154; }
+  .section2 .gallery .navbar-nav {
+    float: none;
+    margin: auto;
+    display: table; }
+    .section2 .gallery .navbar-nav li {
+      margin: 10px 10px; }
+  .section2 button {
+    padding: 5px 20px;
+    background-color: #54D154;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 10px 50px 10px;
+    border: 1px solid green; }
+
+.section3 .test {
+  padding: 10px 200px; }
+  .section3 .test .navbar-nav {
+    float: none;
+    margin: auto;
+    display: table;
+    padding: 50px 50px; }
+
+.section3 .client .navbar-nav {
+  float: none;
+  margin: auto;
+  display: table; }
+  .section3 .client .navbar-nav li {
+    margin: 20px 50px; }
+    .section3 .client .navbar-nav li img {
+      margin: 0 auto;
+      display: table; }
+
+.section4 {
+  background-color: #54D154; }
+  .section4 .person .navbar-nav {
+    float: none;
+    margin: auto;
+    display: table; }
+    .section4 .person .navbar-nav li {
+      margin: 0px 40px;
+      height: 120px;
+      width: 120px;
+      color: white; }
+      .section4 .person .navbar-nav li img {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%; }
+    .section4 .person .navbar-nav span {
+      border: 1px solid black;
+      font-size: 80px; }
+  .section4 .join {
+    background-color: green;
+    padding: 25px 0px; }
+    .section4 .join button {
+      padding: 5px 20px;
+      background-color: #54D154;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      margin: 20px 10px 50px 10px;
+      margin: auto;
+      display: block; }
+
+.section5 {
+  background-color: gray;
+  color: white;
+  padding: 20px 0; }
+  .section5 span {
+    border-bottom: 1px solid black; }
+  .section5 .about {
+    padding: 0 50px; }
+  .section5 .about_2 .nav li[class=img_li] {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 10px 5px; }
+    .section5 .about_2 .nav li[class=img_li] > img {
+      width: 100%;
+      height: 100%; }
+  .section5 .about_2 .nav li {
+    margin: 0 5px 10px 0; }
+    .section5 .about_2 .nav li p {
+      padding: 3px 5px;
+      margin: 1px 0;
+      letter-spacing: 2px; }
+    .section5 .about_2 .nav li button {
+      border: none;
+      font-size: 12px;
+      padding: 2px 3px;
+      border-radius: 5px; }
+    .section5 .about_2 .nav li:nth-child(1) > button {
+      background-color: green; }
+    .section5 .about_2 .nav li:nth-child(2) > button {
+      background-color: yellow; }
+    .section5 .about_2 .nav li:nth-child(3) > button {
+      background-color: blue; }
+    .section5 .about_2 .nav li:nth-child(4) > button {
+      background-color: orangered; }
+    .section5 .about_2 .nav li:nth-child(5) > button {
+      background-color: yellow; }
+  .section5 .about_3 p {
+    margin: -3px 0px; }
+  .section5 .about_3 input[type=text], .section5 .about_3 input[type=submit], .section5 .about_3 input[type=email], .section5 .about_3 textarea {
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 10px; }
+  .section5 .about_3 input[type=submit] {
+    background-color: #54D154;
+    border: none; }
